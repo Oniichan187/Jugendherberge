@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.textbox {
+    padding: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.userinputtextbox, .userinputdropdown {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+}
+
+.datagrid {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.datagrid th, .datagrid td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}

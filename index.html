@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jugendherberge Verwaltung</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Jugendherberge Verwaltung</h1>
+
+    <!-- Anzeige der registrierten Gäste -->
+    <div>
+        <label for="existingUsers">Existierende Gäste:</label>
+        <div id="existingUsers" class="textbox"></div>
+    </div>
+
+    <!-- Eingabe für buchende Gäste -->
+    <div>
+        <label for="bookingGuests">Wer bucht? (IDs der Gäste, z.B.: "1,2" oder "1")</label>
+        <input type="text" id="bookingGuests" class="userinputtextbox" placeholder="1,2">
+    </div>
+
+    <!-- Eingabe für Check-in- und Check-out-Datum -->
+    <div>
+        <label for="checkinDate">Check-in Datum:</label>
+        <input type="date" id="checkinDate" class="userinputtextbox">
+    </div>
+    <div>
+        <label for="checkoutDate">Check-out Datum:</label>
+        <input type="date" id="checkoutDate" class="userinputtextbox">
+    </div>
+
+    <!-- Auswahl der Jugendherberge und des Zimmers -->
+    <div>
+        <label for="hostelDropdown">Jugendherberge:</label>
+        <select id="hostelDropdown" class="userinputdropdown"></select>
+    </div>
+    <div>
+        <label for="roomDropdown">Freie Zimmer:</label>
+        <select id="roomDropdown" class="userinputdropdown"></select>
+    </div>
+
+    <!-- Button zur Buchung -->
+    <button id="bookButton">Buchung abschließen</button>
+
+    <!-- Tabelle zur Anzeige der Buchungen -->
+    <h2>Buchungen</h2>
+    <table id="bookingTable" class="datagrid">
+        <thead>
+            <tr>
+                <th>Gast</th>
+                <th>Jugendherberge</th>
+                <th>Zimmer</th>
+                <th>Von</th>
+                <th>Bis</th>
+            </tr>
+        </thead>
+        <tbody id="bookingTableBody"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
